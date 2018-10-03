@@ -24,6 +24,20 @@ public class TodoItem {
   @Temporal(TemporalType.TIMESTAMP)
   private Date created = new Date();
 
+//  public TodoItem(){
+//
+//  }
+//
+//  public TodoItem(String description){
+//    System.out.println("description");
+//    this.description = description;
+//  }
+//
+//  public TodoItem(Long id, String description){
+//    this.id = id;
+//    this.description = description;
+//  }
+
   public Long getId() {
     return id;
   }

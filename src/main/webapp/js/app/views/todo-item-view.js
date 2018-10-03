@@ -21,6 +21,8 @@ define([
       'keydown @ui.edit': 'onEditKeypress',
       'focusout @ui.edit': 'onEditFocusout',
       'click @ui.toggle': 'toggle'
+//      //new code add - Nirupa
+//      'click@ui.destroy': 'deleteModel'
     },
     modelEvents: {
       change: 'render'
@@ -57,5 +59,9 @@ define([
         this.$el.removeClass('editing');
       }
     }
+//    //new code add - Nirupa
+//    ,deleteModel: function () {
+//     			this.model.destroy();
+//     		}
   });
 });

@@ -42,5 +42,10 @@ define([
         collection: todoList
       }));
     }
+//    //new code add - Nirupa
+//    ,filterItems: function (filter) {
+//    			var newFilter = filter && filter.trim() || 'all';
+//    			filterChannel.request('filterState').set('filter', newFilter);
+//    		}
   });
 });

@@ -11,6 +11,8 @@ import edu.stanford.irt.domain.TodoItem;
 @Service
 @Transactional
 public class TodoItemService {
+
+
   @Autowired
   private TodoItemRepository todoItemRepository;
 
@@ -21,4 +23,9 @@ public class TodoItemService {
   public TodoItem create(TodoItem todoItem) {
     return todoItemRepository.save(todoItem);
   }
+
+//  //added new - Nirupa
+//  public TodoItem update(TodoItem todoItem) { return todoItemRepository.save(todoItem); }
+//
+//  public void delete(TodoItem todoItem) { todoItemRepository.delete(todoItem);}
 }
